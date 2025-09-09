@@ -1,0 +1,114 @@
+# -------------------------
+# .gitignore for TangDynasty FPGA projects
+# Covers: OS, editors, language runtimes, Quartus, open-source toolchains (yosys/nextpnr/iceStorm),
+# simulators, build artifacts, and common local configs.
+# -------------------------
+
+
+### Logs
+*.log
+*.logw
+log/
+td_*.log*
+
+### Local config / secrets
+local_settings.py
+secrets.json
+.localsettings
+user.cfg
+
+### Build artifacts (generic)
+build/
+build-*/
+_build/
+dist/
+release/
+artifacts/
+*.zip
+*.tar.gz
+*.7z
+
+### Quartus / Intel FPGA
+db/
+incremental_db/
+output/
+output_files/
+*_Runs/
+UDP_EXAMPLE_Runs/
+*.qpf
+*.qsf
+*.qws
+*.qdb
+*.qar
+*.sof
+*.rbf
+*.pof
+*.jic
+*.sld
+*.sldinfo
+*.qip
+*.quartus
+*.ip_user_files/
+*.rpt
+*.rpt_summary
+*.rdb
+*.cdf
+*.settings
+
+### Open-source toolchain (yosys / nextpnr / iceStorm / arachne)
+# yosys/nextpnr/iceStorm intermediate and outputs
+*.asc
+*.blif
+*.json
+*.fasm
+*.fasm.gz
+*.bin
+*.bit
+*.bit.gz
+*.svf
+*.hex
+*.asc.gz
+fasm_out/
+share/
+
+### Synthesis / netlists / intermediate files
+*.ngc
+*.edf
+*.ngd
+*.xaw
+*.xlnx
+*.eblif
+*.ncd
+
+### Simulation (ModelSim / Questa / Vivado / others)
+*.wlf
+*.vcd
+*.vpd
+*.wdb
+*.vcd.gz
+wave.do
+*.do
+
+### Tool caches and temporary metadata
+.cache/
+.sconsign.dblite
+.pytest_cache/
+.mypy_cache/
+*.cache
+
+### Misc temporary / backup
+*.jou
+*.jou~
+*.prj.orig
+*.orig
+*.mk
+*.dep
+*.lst
+
+### Keep IDE/hardware programming files out
+*.elf
+*.elf.map
+flash.bin
+program_*.bin
+
+# End of file
