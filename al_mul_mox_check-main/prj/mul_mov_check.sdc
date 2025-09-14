@@ -1,0 +1,1 @@
+create_clock -name sys_clk -period 40 -waveform {0 20}  -add

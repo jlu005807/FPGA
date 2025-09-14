@@ -1,0 +1,26 @@
+set_pin_assignment { cam_data[0] } { LOCATION = E15; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[1] } { LOCATION = L10; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[2] } { LOCATION = K15; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[3] } { LOCATION = J16; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[4] } { LOCATION = D16; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[5] } { LOCATION = M10; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[6] } { LOCATION = G16; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_data[7] } { LOCATION = G14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_href } { LOCATION = F14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_pclk } { LOCATION = H16; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_pwdn } { LOCATION = M14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { cam_rst_n } { LOCATION = P11; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { cam_scl } { LOCATION = M16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { cam_sda } { LOCATION = K16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { cam_vsync } { LOCATION = H15; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { cam_xclk } { LOCATION = F15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+
+set_pin_assignment	{ sys_clk }	{ LOCATION = R7; PULLTYPE = NONE; }
+set_pin_assignment	{ sys_rst_n }	{ LOCATION = C1; PULLTYPE = NONE; }
+
+set_pin_assignment	{ HDMI_CLK_P }	{ LOCATION = K1; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D0_P }	{ LOCATION = F5; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D1_P }	{ LOCATION = E3; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D2_P }	{ LOCATION = B3; IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+

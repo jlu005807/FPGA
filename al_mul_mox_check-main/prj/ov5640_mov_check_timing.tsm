@@ -1,0 +1,61 @@
+eagle_s20
+13 23 0 80 80 0 0
+3.852 infinity ov5640_mov_check eagle_s20 EG4S20BG256 Detail NA 23 1
+Path delay: 5ns max
+13 80 80 1
+Max path
+23 3
+Endpoint: u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+23 3.852000 1 1
+Timing path: u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_56.clk->u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_56.clk
+u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+25 3.852000 4.884000 1.032000 0 1
+u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/primary_addr_gray_reg[7] u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37.mi[1]
+
+
+Endpoint: u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+50 3.946000 1 1
+Timing path: u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_56.clk->u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_56.clk
+u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37
+52 3.946000 4.884000 0.938000 0 1
+u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/primary_addr_gray_reg[8] u_Sdram_Control_4Port/read_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg3_syn_37.mi[0]
+
+
+Endpoint: u_isp_mul_obj_check/lt128_syn_50
+77 3.962000 1 1
+Timing path: u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_63.clk->u_isp_mul_obj_check/lt128_syn_50
+u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/reg0_syn_63.clk
+u_isp_mul_obj_check/lt128_syn_50
+79 3.962000 4.884000 0.922000 0 1
+u_Sdram_Control_4Port/write_fifo1/dcfifo_component/wr_to_rd_cross_inst/primary_addr_gray_reg[9] u_isp_mul_obj_check/lt128_syn_50.mi[1]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 9 clock net(s): 
+	cam_pclk_dup_13
+	clk_50m_dup_1
+	config_inst_syn_10
+	sys_clk_dup_1
+	u_Sdram_Control_4Port/CTRL_CLK
+	u_Sdram_Control_4Port/SDRAM_CLK
+	u_clk_gen/clk0_out
+	u_ov5640_top/u_i2c_ctrl/dri_clk_syn_4
+	vga_clk_dup_1
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             80     set_false_path -hold -from [ get_regs {*/primary_addr_gray_reg[*]} ] -to [ get_regs {*/sync_r1[*]} ]
+
